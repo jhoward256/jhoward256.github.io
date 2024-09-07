@@ -10,6 +10,7 @@ body{
 #logo {
     margin: 0px;
     padding: 8px;
+    color: white;
     font-family: "Fredoka One", sans-serif;
     width: 16%;
     text-shadow: 
@@ -25,7 +26,7 @@ ul{
 }
 
 body > header {
-    background-color: orange;
+    background-color: #b7a7e4;
     color: white;
     display: flex;
     height: 12vh;
@@ -56,6 +57,12 @@ body > header > nav > ul {
 
 }
 
+.navbutton:hover {
+    background-color: #8675b6;
+    box-shadow: 0px 4px 8px rgba (0, 0, 0, 0.5);
+
+}
+
 body > main article {
     width: 80%;
     margin: auto;
@@ -66,9 +73,61 @@ body > main article {
     justify-content: space-around;
 }
 
-#main-content > div {
-    width: 70%;
+h1 {
+    font-size: 2rem;
+    color:#333;
+    text-align: center;
 }
+
+h2{
+    color:#333;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+p {
+    text-align: justify;
+    margin: 0 20px;
+}
+
+/* Recipe Grid Styles */
+.recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 40px;
+}
+
+.recipe-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.recipe-card img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.recipe-card h2 {
+    margin-top: 10px;
+    color: #333;
+}
+
+.recipe-card a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.recipe-card:hover {
+    transform: scale(1.05);
+}
+
 
 form {
     text-align: center;
@@ -79,7 +138,7 @@ h2 {
 }
 
 body > footer {
-    background-color: orange;
+    background-color: #b7a7e4;
     display: flex;
 }
 
@@ -100,4 +159,40 @@ img {
 #footer-ul > div > li > a {
     color: white;
     text-decoration: none;
+}
+
+/* Recipe pages css */
+
+.recipe-details {
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+}
+
+.recipe-details img {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.recipe-details h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.recipe-details p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+ul, ol {
+    margin-left: 20px;
 }
